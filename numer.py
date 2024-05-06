@@ -43,6 +43,7 @@ def fixedtheta(theta):
     plt.ylabel('Mean Squared Error')
     plt.legend()
     plt.show()
+    
 #Figure 3-2
 def fixedphi(phi):
     thetas = np.arange(10, 60, 3)
@@ -68,6 +69,7 @@ def fixedphi(phi):
     plt.ylabel('Mean Squared Error')
     plt.legend()
     plt.show()
+    
 #Figure 3-13
 def MSEforDifferentSNRs():
     SNRs = np.arange(-10, 21, 5)  # SNR range from -10 dB to 20 dB
@@ -132,7 +134,6 @@ def MSEforDifeerentApertures():
     plt.grid(True)
     plt.show()
 
-MSEforDifeerentApertures()
 
 #Figure 3-15
 def MSEforDifferentNumberOfSnapshots():
@@ -166,6 +167,7 @@ def MSEforDifferentNumberOfSnapshots():
     plt.legend()
     plt.grid(True)
     plt.show()
+    
 #Figures 4-1 and 4-2
 def fixedthetan1p1(theta):
     phis = np.arange(-80, 80, 3)
@@ -210,7 +212,7 @@ def fixedthetan1p1(theta):
 #Figures 4-3 and 4-4
 def fixedphin1p1(phi):
     thetas = np.arange(15, 60, 3)
-    trials = 5
+    trials = 100
     mse_theta_p1 = []
     mse_phi_p1 = []
     mse_theta_n1 = []
